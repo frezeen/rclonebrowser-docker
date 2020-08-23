@@ -1,6 +1,9 @@
 #
 # RcloneBrowser Dockerfile
 #
+FROM resin/armv7hf-debian
+
+RUN [ "cross-build-start" ]
 
 FROM didierc/baseimage-gui
 
@@ -79,3 +82,5 @@ LABEL \
       org.label-schema.version="unknown" \
       org.label-schema.vcs-url="https://github.com/romancin/rclonebrowser-docker" \
       org.label-schema.schema-version="1.0"
+
+RUN [ "cross-build-end" ]
