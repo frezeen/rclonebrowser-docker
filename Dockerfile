@@ -8,7 +8,7 @@ FROM didierc/baseimage-gui
 ARG RCLONE_VERSION=current
 
 # Define environment variables
-ENV ARCH=amd64
+ENV ARCH=arm
 
 # Define working directory.
 WORKDIR /tmp
