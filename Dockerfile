@@ -1,7 +1,7 @@
 #
 # RcloneBrowser Dockerfile
 #
-FROM resin/armv7hf-debian
+FROM resin/armv7hf-debian-qemu
 
 RUN [ "cross-build-start" ]
 
